@@ -1,0 +1,27 @@
+EXERCÍCIOS:
+
+1_ O arquivo rpg.db guarda as tabelas e os dados, eles continuam salvos depois de fechar o programa.
+
+2_ Tabelas: classes, jogadores, itens, personagens e inventario. Personagens: id, nome, nivel, jogador_id e classe_id.
+
+3_ significa que o id é um numero unico, sem poder repetir e tbm que o banco gera o id automaticamente.
+
+4_ Ladino recebe id 5, ele consegue o id com cursor.lastrowid.
+
+5_ fetchone() retorna uma linha, fetchall() retorna uma lista. Por isso a gente usa um para id e outro para buscas que pode achar vários resultados.
+
+6_ Aparecem Arqueiro, Curandeiro e Guerreiro. % representa qualquer sequência de caracteres.
+
+7_ O ? separa os valores do comando SQL e ajudam a evitar erros e injeção de SQL.
+
+8_ Sem commit(), a inclusão pode não ser salva no banco.
+
+9_ Podem ser diferentes: o LIKE padrão do SQLite ignora maiúsculas em letras sem acento, mas não necessariamente em letras acentuadas como ç/Ç.
+
+10_ O banco impediu a inclusão porque não existe jogador com id 99, é a chave estrangeira.
+
+11_ Guardar o id evita repetir o apelido e deixa buscar o dado atualizado com JOIN.
+
+12_ Gork carrega Espada Longa(1), Poção de Vida(3) e Escudo de Ferro(1).
+
+13_ Uma função para adicionar um item ao inventário. SQL: INSERT INTO inventario (personagem_id, item_id, quantidade) VALUES (?, ?, ?)
